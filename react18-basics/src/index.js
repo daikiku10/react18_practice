@@ -20,17 +20,17 @@ const queryClient = new QueryClient({
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/autobatch" element={<AutoBatch />} />
-        </Routes>
-      </BrowserRouter>
-      <ReactQueryDevtools initialIsOpen={false} />
-    </QueryClientProvider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <QueryClientProvider client={queryClient}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/autobatch" element={<AutoBatch />} />
+      </Routes>
+    </BrowserRouter>
+    <ReactQueryDevtools initialIsOpen={false} />
+  </QueryClientProvider>
+  // </React.StrictMode>
 )
 
 // If you want to start measuring performance in your app, pass a function
